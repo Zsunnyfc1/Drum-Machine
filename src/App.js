@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import {firstSoundsGroup,secondSoundsGroup} from './soundGroups';
 
@@ -73,11 +73,6 @@ function App() {
     key.parentElement.style.color = "#ffffff"
   }
   
-  const deActivatedKey = (audio) => {
-    audio.parentElement.style.backgroundColor = "#ffffff"
-    audio.parentElement.style.color = "#000000"
-  }
- 
  const deactivateAudio = (audio) => {
    setTimeout(() => {
      audio.parentElement.style.backgroundColor = "#ffffff"
