@@ -25,7 +25,7 @@ const KeyboardKey = ({ play, deactivateAudio, sound: { id, key, url, keyCode } }
   
   React.useEffect(() => {
       document.addEventListener('keydown', handleKeydown);
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <button value="test" id={keyCode} className="drum-pad" onClick={() => play(key, id)}>
